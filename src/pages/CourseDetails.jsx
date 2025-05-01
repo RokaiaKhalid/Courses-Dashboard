@@ -37,16 +37,16 @@ const CourseDetails = (onDelete) => {
             <ArrowLeft className="mr-2" /> 
           </button>
       </div>
-      <div className="flex gap-4 sm:flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
+      <div className="flex gap-4 flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
         {course.image && (
           <img
             src={course.image}
             alt={course.title}
-            className="w-full md:min-w-[50%] h-64 md:h-[75] object-cover"
+            className="w-full md:min-w-[50%] md:max-w-[50%] h-40 md:h-[75] object-contain"
           />
         )}
 
-        <div className="p-6 space-y-4">
+        <div className="p-6 space-y-4 flex-1">
           <h2 className="text-3xl font-bold">{course.title}</h2>
           <p className="text-gray-700 sm:text-base/5 md:text-lg/7">{course.description}</p>
 

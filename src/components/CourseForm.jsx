@@ -64,9 +64,9 @@ const CourseForm = ({ initialData = {}, onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 flex flex-col md:flex-row gap-4">
-      {error && <p className="text-red-500 text-sm">{error}</p>}
-      <div className="w-full md:w-1/2">
-  <label className="block text-sm mb-1">Image Upload</label>
+      {error && <p className="text-red-500 text-sm lg:text-xl">{error}</p>}
+      <div className="w-full h-1/2  md:w-1/2">
+  <label className="block text-sm lg:text-xl mb-2">Image Upload</label>
   <div className="relative w-full h-64 border rounded overflow-hidden group bg-gray-100 cursor-pointer">
     <input
       type="file"
@@ -85,7 +85,7 @@ const CourseForm = ({ initialData = {}, onSubmit }) => {
     ) : (
       <div className="flex flex-col items-center justify-center h-full text-gray-400">
         <Plus size={32} />
-        <span className="text-sm mt-1">Click to upload</span>
+        <span className="text-sm lg:text-xl mt-1">Click to upload</span>
       </div>
     )}
 
@@ -100,7 +100,7 @@ const CourseForm = ({ initialData = {}, onSubmit }) => {
 
       <div>
       <div>
-        <label className="block text-sm mb-1">Title *</label>
+        <label className="block text-sm lg:text-xl mb-1">Title *</label>
         <input
           type="text"
           name="title"
@@ -111,7 +111,7 @@ const CourseForm = ({ initialData = {}, onSubmit }) => {
       </div>
 
       <div>
-        <label className="block text-sm mb-1">Description *</label>
+        <label className="block text-sm lg:text-xl mb-1">Description *</label>
         <textarea
           name="description"
           rows={4}
@@ -124,7 +124,7 @@ const CourseForm = ({ initialData = {}, onSubmit }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm mb-1">Start Date</label>
+          <label className="block text-sm lg:text-xl mb-1">Start Date</label>
           <input
             type="date"
             name="startDate"
@@ -135,7 +135,7 @@ const CourseForm = ({ initialData = {}, onSubmit }) => {
         </div>
 
         <div>
-          <label className="block text-sm mb-1">End Date</label>
+          <label className="block text-sm lg:text-xl mb-1">End Date</label>
           <input
             type="date"
             name="endDate"
@@ -147,7 +147,7 @@ const CourseForm = ({ initialData = {}, onSubmit }) => {
       </div>
 
       <div>
-        <label className="block text-sm mb-1">Price ($)</label>
+        <label className="block text-sm lg:text-xl mb-1">Price ($)</label>
         <input
           type="number"
           name="price"

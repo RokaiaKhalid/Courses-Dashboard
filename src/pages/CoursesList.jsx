@@ -49,9 +49,9 @@ const CoursesList = () => {
               setCurrentPage(1); // Reset to page 1 when searching
             }}
           />
-          <div className="flex gap-2">
+          <div className="flex items-center gap-3">
             <Search
-              className="sm:inline-block md:hidden"
+              className="inline-block md:hidden"
               onClick={() => show()}
             />
             <Link
@@ -59,7 +59,7 @@ const CoursesList = () => {
               className="flex bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
             >
               <Plus />{" "}
-              <span className="sm:hidden md:block"> Add New Course</span>
+              <p className="hidden lg:block"> Add New Course</p>
             </Link>
           </div>
         </div>
