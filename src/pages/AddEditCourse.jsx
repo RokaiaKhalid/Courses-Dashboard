@@ -22,7 +22,7 @@ const AddEditCourse = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-6 bg-gray-50">
-      <h2 className="text-2xl font-semibold mb-4">
+      <h2 className="text-2xl font-semibold mb-4 pb-4 shadow-xl">
         {isEdit ? "Edit Course" : "Add New Course"}
       </h2>
       <CourseForm initialData={course} onSubmit={handleSubmit} />
